@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📦 Gestão de Stock</h1>
+            <p>Sistema de controlo de inventário</p>
+        </header>
+
+        <!-- Formulário de Novo Produto -->
+        <div class="card">
+            <div class="card-header">
+                <h2>➕ Novo Produto</h2>
+            </div>
+            <div class="card-body">
+                <form id="formProduto">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="sku">SKU (Código único):</label>
+                            <input type="text" id="sku" required placeholder="Ex: TEC001">
+                        </div>
+                        <div class="form-group">
+                            <label for="nome">Nome do Produto:</label>
+                            <input type="text" id="nome" required placeholder="Ex: Teclado Mecânico">
+                        </div>
+                        <div class="form-group">
+                            <label for="preco">Preço (€):</label>
+                            <input type="number" id="preco" step="0.01" min="0" required placeholder="0.00">
+                        </div>
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade Inicial:</label>
+                            <input type="number" id="quantidade" min="0" value="0" placeholder="0">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Criar Produto</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Lista de Produtos</h2>
+            </div>
+            <div class="card-body">
+                <div id="produtosList" class="produtos-container">
+                    <!-- Os produtos serão inseridos aqui -->
+                    <p class="loading">A carregar produtos...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notificações Toast -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
