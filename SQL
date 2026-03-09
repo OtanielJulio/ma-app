@@ -1,0 +1,5 @@
+INSERT INTO produtos (nome, sku, quantidade, preco)
+VALUES 
+('Teclado Mecânico', 'TEC123', 10, 79.90),
+('Mouse Gamer', 'MOU456', 25, 39.90),
+('Monitor 24"', 'MON789', 5, 199.90);
