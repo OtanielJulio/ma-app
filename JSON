@@ -1,0 +1,16 @@
+[
+ {
+  "id":1,
+  "nome":"Teclado Mecânico",
+  "sku":"TEC123",
+  "quantidade":10,
+  "preco":79.90
+ },
+ {
+  "id":2,
+  "nome":"Mouse Gamer",
+  "sku":"MOU456",
+  "quantidade":25,
+  "preco":39.90
+ }
+]
